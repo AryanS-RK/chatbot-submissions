@@ -47,8 +47,11 @@ while True:
 
     if message.lower() == "reset":
         # add reset behavior
+        previous_response_id = None
+        print("Bot: Conversation reset.")
+        continue
 
-    response = client.responses.create(
+    Response = client.responses.create(
         model="gpt-6-luna",
         instructions=INSTRUCTIONS,
         input=message,

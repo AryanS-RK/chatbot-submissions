@@ -23,6 +23,8 @@ while True:
 
     if not message:
         # what do we do if the input is empty?
+        print("Bot: Please enter a valid message.")
+        continue
 
     if message.lower() == "quit":
         print("Bot: Goodbye!")
