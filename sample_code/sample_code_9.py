@@ -58,6 +58,6 @@ while True:
         previous_response_id=previous_response_id
     )
 
-    print("Bot:", response.output_text)
+    print("Bot:", Response.output_text)
 
-    previous_response_id = response.id
+    previous_response_id = Response.id
